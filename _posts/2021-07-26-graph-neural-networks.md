@@ -4,8 +4,9 @@ title: Graph Neural Networks
 date: 2020-02-04 12:00:00
 description: Tracking my progress towards learning GNNs for my research internship at IIT Patna
 ---
-Video lectures - [https://www.youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn](YouTube playlist)
-Textbook - [cs.mcgill.ca/~wlh/grl_book/](Graph Representation Learning)
+#### Video lectures - [YouTube playlist: CS224W](https://www.youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn)
+#### Textbook - [Graph Representation Learning - William A. Hamilton](cs.mcgill.ca/~wlh/grl_book/)
+#### Course - [CS224W](https://cs224w.stanford.edu/)
 
 # Day 1
 
