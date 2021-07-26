@@ -15,7 +15,24 @@ description: Tracking my progress towards learning GNNs for my research internsh
 - Concepts
     - What are graphs?
     - Machine learning tasks on graphs
+        - Node classification
+        - Link (Relation) prediction
+        - ...
     - Node-level features
-    - Link-level features (NOT DONE)
+        - Node Degree
+        - Node Centrality
+            - Eigenvector Centrality [a node is important if it's neighbors are important] (*have to re-read*)
+            - Betweenness Centrality [a node is important if it is an important connector/bridge]
+            - Closeness Centrality [a node is important if close to many nodes]
+        - Clustering Coefficient (local structure) [a nodes is important if it's neighboring nodes are highly connected with each other]
+        - Graphlets (!)
+            - Observation: Clustering coefficent = no. of triangles in the ego network of a nodes
+            - Generalize this notion by counting occurrences of different graphlets
+            - Graphlet Degree Vector (different from Graphlet Features - from graphlet kernel)
+    - Link-level features (yet to read)
     - Graph-level features
-    - Weisfeiler-Lehman kernel
+        - Kernel methods (have to understand *fundamentals of kernels*)
+            - Graphlet kernel [Bag-of-Words for a graph]
+            - Weisfeiler-Lehman kernel [Bag-of-Colors/Generalized version of Bag-of-Words]
+                - Isomorphism Test
+    - Node Embeddings
