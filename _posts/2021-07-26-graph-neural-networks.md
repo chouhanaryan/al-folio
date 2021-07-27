@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Graph Neural Networks
-date: 2021-07-26 12:00:00
-description: Tracking my progress towards learning GNNs for my research internship at IIT Patna
+date: 2021-07-27 12:00:00
+description: Tracking my progress towards learning about GNNs for my research internship at IIT Patna
 ---
 ##### Video lectures - [YouTube playlist: CS224W](https://www.youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn)
 ##### Textbook - [Graph Representation Learning - William A. Hamilton](cs.mcgill.ca/~wlh/grl_book/)
@@ -21,7 +21,7 @@ description: Tracking my progress towards learning GNNs for my research internsh
 #### Node-level features
 - Node Degree
 - Node Centrality
-    - Eigenvector Centrality [a node is important if its neighbors are important] (*have to re-read - linear algebra concepts*)
+    - Eigenvector Centrality [a node is important if its neighbors are important] *(have to re-read - linear algebra concepts)*
     - Betweenness Centrality [a node is important if it is an important connector/bridge]
     - Closeness Centrality [a node is important if it is close to many nodes]
 - Clustering Coefficient (local structure) [a node is important if its neighboring nodes are highly connected with each other]
@@ -29,10 +29,11 @@ description: Tracking my progress towards learning GNNs for my research internsh
     - Observation: Clustering coefficent = no. of triangles in the ego network of a nodes
     - Generalize this notion by counting occurrences of different graphlets
     - Graphlet Degree Vector (different from Graphlet Features - from graphlet kernel)
-#### Link-level features (*yet to read*)
+
+#### Link-level features *(yet to read)*
 
 #### Graph-level features
-- Kernel methods (*have to understand fundamentals of kernels*)
+- Kernel methods *(have to polish up on fundamentals of kernels)*
     - Graphlet kernel [Bag-of-Words for a graph]
     - Weisfeiler-Lehman kernel [Bag-of-Colors/Generalized version of Bag-of-Words]
         - Isomorphism Test
@@ -71,29 +72,29 @@ description: Tracking my progress towards learning GNNs for my research internsh
 #### Collective classification
 - Probabilistic framework
 - Markov assumption - label $$ Y_v $$ of one node $$ v $$ depends upon labels of only its neighboring nodes $$ N_v $$ (First order Markov assumption $$ \implies $$ degree 1 dependence)
-- $$ P(Y_v) = P(Y_v|N_v) $$
+- Basically, $$ P(Y_v) = P(Y_v \vert N_v) $$
 - 'Collective' - we will classify every node in the graph
 - Steps
     - Local classifier
     - Relational classifier
     - Collective inference
     
-#### Techniques (*yet to read*)
+#### Techniques *(yet to read)*
 - Relational classification
 - Iterative classification
 - Belief propagation
 
 #### Graph Neural Networks
 - Limitations of shallow embeddings
-    - No. of parameters is very high ($$ O(|V|) $$)
-    - 'transductive' - predictions cannot be made for examples not in the training set
+    - No. of parameters is very high - $$ O(\vert V \vert) $$
+    - 'transductive inference' - predictions cannot be made for examples not in the training set (as opposed to inductive inference)
     - Do not incorporate node features
 - Deep Graph Encoders
     - Here, $$ ENC(v) $$ = neural network
     - Graph 🡒 Graph convolutions 🡒 Activations 🡒 Regularization 🡒 ... 🡒 Node embeddings
 - Deep Learning for Graphs
     - Naive approach - adjacency matrix + features = input to network
-        - ($$ O(|V|) $$) parameters
+        - $$ O(\vert V \vert) $$ parameters
         - Graph sizes
         - Sensitive to node ordering
     - Better approach - generalize convolutions (from CNNs) beyond simple lattices to allow it to leverage node features (eg. text, images)
