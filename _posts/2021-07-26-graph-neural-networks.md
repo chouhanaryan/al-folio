@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Graph Neural Networks
-date: 2020-02-04 12:00:00
+date: 2021-07-26 12:00:00
 description: Tracking my progress towards learning GNNs for my research internship at IIT Patna
 ---
 ##### Video lectures - [YouTube playlist: CS224W](https://www.youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn)
