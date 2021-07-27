@@ -36,3 +36,9 @@ description: Tracking my progress towards learning GNNs for my research internsh
             - Weisfeiler-Lehman kernel [Bag-of-Colors/Generalized version of Bag-of-Words]
                 - Isomorphism Test
     - Node Embeddings
+        - Task: map nodes into an embedding space
+        - How?
+            1. Encoder - nodes -> embeddings
+            2. Node similarity function (in original network) 
+            3. Decoder - embeddings -> similarity score (for the embeddings) [usually just the dot product]
+            4. Optimize encoder such that $$ similarity(u, v) \approx z_u^Tz_v $$
