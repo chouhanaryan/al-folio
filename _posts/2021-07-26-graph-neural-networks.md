@@ -6,7 +6,7 @@ description: Tracking my progress towards learning GNNs for my research internsh
 ---
 ##### Video lectures - [YouTube playlist: CS224W](https://www.youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn)
 ##### Textbook - [Graph Representation Learning - William A. Hamilton](cs.mcgill.ca/~wlh/grl_book/)
-##### Course - [CS224W](https://cs224w.stanford.edu/)
+##### Course - [CS224W - Prof. Jure Leskovec](https://cs224w.stanford.edu/)
 ------------
 
 ## Day 1 (26th July)
