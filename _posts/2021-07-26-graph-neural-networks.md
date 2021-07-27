@@ -4,11 +4,11 @@ title: Graph Neural Networks
 date: 2020-02-04 12:00:00
 description: Tracking my progress towards learning GNNs for my research internship at IIT Patna
 ---
-#### Video lectures - [YouTube playlist: CS224W](https://www.youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn)
-#### Textbook - [Graph Representation Learning - William A. Hamilton](cs.mcgill.ca/~wlh/grl_book/)
-#### Course - [CS224W](https://cs224w.stanford.edu/)
+##### Video lectures - [YouTube playlist: CS224W](https://www.youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn)
+##### Textbook - [Graph Representation Learning - William A. Hamilton](cs.mcgill.ca/~wlh/grl_book/)
+##### Course - [CS224W](https://cs224w.stanford.edu/)
 
-# Day 1
+# Day 1 (26th July)
 
 - Video lectures: 1.1 to 3.2
 - Textbook - 1.1 to 2.1, 3.1
@@ -21,10 +21,10 @@ description: Tracking my progress towards learning GNNs for my research internsh
     - Node-level features
         - Node Degree
         - Node Centrality
-            - Eigenvector Centrality [a node is important if it's neighbors are important] (*have to re-read*)
+            - Eigenvector Centrality [a node is important if its neighbors are important] (*have to re-read - linear algebra concepts*)
             - Betweenness Centrality [a node is important if it is an important connector/bridge]
-            - Closeness Centrality [a node is important if close to many nodes]
-        - Clustering Coefficient (local structure) [a node is important if it's neighboring nodes are highly connected with each other]
+            - Closeness Centrality [a node is important if it is close to many nodes]
+        - Clustering Coefficient (local structure) [a node is important if its neighboring nodes are highly connected with each other]
         - Graphlets (!)
             - Observation: Clustering coefficent = no. of triangles in the ego network of a nodes
             - Generalize this notion by counting occurrences of different graphlets
