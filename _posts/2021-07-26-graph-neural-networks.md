@@ -51,3 +51,13 @@ description: Tracking my progress towards learning GNNs for my research internsh
             - Cannot obtain embeddings for nodes not in the training set (all embeddings need to be recomputed - random walks)
             - Cannot capture structural similarity (solved by anonymous walks - *yet to read*)
             - Cannot utilize node, link, graph features
+
+## Day 2 (27th July)
+
+- Message Passing
+    - Intuition: correlations exist in networks
+        - Homophily [individual characteristics 🡒 social connections]
+        - Influence [social connections 🡒 individual characteristics]
+- Node classification
+    - Given a graph ($$ A = n \times n $$ adjacency matrix) of $$ n $$ nodes with a few labeled nodes ($$ Y = \{0, 1\}^n $$ vector of labels), we wish to predict the labels of the remaining nodes
+    - Assumption: there is homophily in the network
