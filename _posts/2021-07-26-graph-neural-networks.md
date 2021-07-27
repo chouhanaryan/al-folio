@@ -99,3 +99,5 @@ description: Tracking my progress towards learning GNNs for my research internsh
             - This builds on message passing (see above)
             - Every node defines a different computation graph based on its neighborhood
             - Training over every neural network, not just one
+            - K layer net for K neighborhood steps
+    - Neighborhood aggregation
