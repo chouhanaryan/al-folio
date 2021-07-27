@@ -11,12 +11,14 @@ description: Tracking my progress towards learning GNNs for my research internsh
 
 ## Day 1 (26th July)
 
-### What are graphs?
-### Machine learning tasks on graphs
+#### What are graphs?
+
+#### Machine learning tasks on graphs
 - Node classification
 - Link (Relation) prediction
 - ...
-### Node-level features
+
+#### Node-level features
 - Node Degree
 - Node Centrality
     - Eigenvector Centrality [a node is important if its neighbors are important] (*have to re-read - linear algebra concepts*)
@@ -27,13 +29,15 @@ description: Tracking my progress towards learning GNNs for my research internsh
     - Observation: Clustering coefficent = no. of triangles in the ego network of a nodes
     - Generalize this notion by counting occurrences of different graphlets
     - Graphlet Degree Vector (different from Graphlet Features - from graphlet kernel)
-### Link-level features (*yet to read*)
-### Graph-level features
+#### Link-level features (*yet to read*)
+
+#### Graph-level features
 - Kernel methods (*have to understand fundamentals of kernels*)
     - Graphlet kernel [Bag-of-Words for a graph]
     - Weisfeiler-Lehman kernel [Bag-of-Colors/Generalized version of Bag-of-Words]
         - Isomorphism Test
-### Node Embeddings
+
+#### Node Embeddings
 - Task: map nodes into an embedding space
 - Properties of embeddings
     - Unsupervised/self-supervised learning (node labels/features are not utilized)
@@ -54,15 +58,17 @@ description: Tracking my progress towards learning GNNs for my research internsh
 
 ## Day 2 (27th July)
 
-### Message Passing
+#### Message Passing
 - Intuition: correlations exist in networks
     - Homophily [individual characteristics 🡒 social connections]
     - Influence [social connections 🡒 individual characteristics]
-### Node classification
+
+#### Node classification
 - Semi-supervised
 - Given a graph ($$ A = n \times n $$ adjacency matrix) of $$ n $$ nodes with a few labeled nodes ($$ Y = \{0, 1\}^n $$ vector of labels), we wish to predict the labels of the remaining nodes
 - Assumption: there is homophily in the network
-### Collective classification
+
+#### Collective classification
 - Probabilistic framework
 - Markov assumption - label $$ Y_v $$ of one node $$ v $$ depends upon labels of only its neighboring nodes $$ N_v $$ (First order Markov assumption $$ \implies $$ degree 1 dependence)
 - $$ P(Y_v) = P(Y_v|N_v) $$
@@ -71,12 +77,13 @@ description: Tracking my progress towards learning GNNs for my research internsh
     - Local classifier
     - Relational classifier
     - Collective inference
-### Techniques (*yet to read*)
+    
+#### Techniques (*yet to read*)
 - Relational classification
 - Iterative classification
 - Belief propagation
 
-### Graph Neural Networks
+#### Graph Neural Networks
 - Limitations of shallow embeddings
     - No. of parameters is very high ($$ O(|V|) $$)
     - 'transductive' - predictions cannot be made for examples not in the training set
