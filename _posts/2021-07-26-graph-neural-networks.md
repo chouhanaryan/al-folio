@@ -149,4 +149,4 @@ description: Tracking my progress towards learning about GNNs for my research in
             - Purpose: Since the no. of nodes is a lot, we hash it and hence, same nodes get the same representations down the line?
             - Discrete vs continuous
         - Analogy to WL algorithm
-    - Node $$ \checkmark $$ vs Graph $$ \xmark $$
+    - Node $$ \checkmark $$ vs Graph $$ \chi $$
