@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Graph Neural Networks
-date: 2021-07-27 12:00:00
+date: 2021-07-28 12:00:00
 description: Tracking my progress towards learning about GNNs for my research internship at IIT Patna
 ---
 ##### Video lectures - [YouTube playlist: CS224W](https://www.youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn)
@@ -108,4 +108,45 @@ description: Tracking my progress towards learning about GNNs for my research in
             - Every node defines a different computation graph based on its neighborhood
             - Training over every neural network, not just one
             - K layer net for K neighborhood steps
-    - Neighborhood aggregation
+
+## Day 3 (28th July)
+
+#### Graph Neural Networks
+- Deep Learning for Graphs    
+    - Basic GNN structure
+    - Aggregate and Update functions
+    - Depending upon different ways of doing this - different models
+    - Problems also possible: over-smoothing
+    - Graph Convolution Networks (GCN), Graph Attention Networks (GAT), GraphSAGE
+    - Concatenations, skip connections
+- GNNs = WL algorithm (for discrete node features)
+    - Active area of research - upgrade GNNs to be provably stronger
+
+## Day 4 (29th July)
+
+#### DEMO-Net
+- Current GNNs pitfalls identified
+    - graph convolutions (aggregation function) properties = seed-oriented + degree-aware + order-free
+        - (to be clear, these are properties that we want but most GNN approaches do not have them)
+    - degree information is not optimally utilized
+    - graph-level pooling schemes theoretically unclear (?)
+- Proposal: *multi-task graph convolution where each task represents node representation learning for nodes with a specific degree value, thus leading to preserving the degree specific graph structure*
+- task = learning node embeddings for all nodes with a specific degree  
+  multi-task = learning node embeddings for all nodes with all degrees
+- Proposed Method: *degree-specific weight and hashing functions for graph convolutions*
+- WL algorithm-inspired design
+    - Based on properties (see above)
+    - Mathematically equivalent as well (?)
+- Idea/Assumption: *nodes with same degrees share the same graph convolutions*
+    - Why: reasoning is that nodes with same degrees are structurally similar & have similar 'roles' (note: subtree structures)
+- My understanding
+    - Understood most of the proposed design
+    - Equation 5 $$ \checkmark $$
+    - Degree-specific weight function $$ \checkmark $$
+        - Idea: incorporating attention into degree specificity
+    - Hashing function
+        - A bit unclear
+            - Purpose: Since the no. of nodes is a lot, we hash it and hence, same nodes get the same representations down the line?
+            - Discrete vs continuous
+        - Analogy to WL algorithm
+    - Node $$ \checkmark $$ vs Graph $$ \xmark $$
