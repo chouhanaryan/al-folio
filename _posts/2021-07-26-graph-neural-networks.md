@@ -5,7 +5,7 @@ date: 2021-07-28 12:00:00
 description: Tracking my progress towards learning about GNNs for my research internship at IIT Patna
 ---
 ##### Video lectures - [YouTube playlist: CS224W](https://www.youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn)
-##### Textbook - [Graph Representation Learning - William A. Hamilton](https://www.cs.mcgill.ca/~wlh/grl_book/)
+##### Textbook - [Graph Representation Learning - William L. Hamilton](https://www.cs.mcgill.ca/~wlh/grl_book/)
 ##### Course - [CS224W - Prof. Jure Leskovec](https://cs224w.stanford.edu/)
 ------------
 
@@ -150,3 +150,6 @@ description: Tracking my progress towards learning about GNNs for my research in
             - Discrete vs continuous
         - Analogy to WL algorithm
     - Node $$ \checkmark $$ vs Graph $$ \chi $$
+
+#### Tensorflow
+- Placeholders, Sessions
