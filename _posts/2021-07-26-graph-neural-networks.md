@@ -9,7 +9,7 @@ date: 2021-07-28 12:00:00
 ##### Course - [CS224W - Prof. Jure Leskovec](https://cs224w.stanford.edu/)
 ------------
 
-## Day 1 (26th July)
+## Day 1
 
 #### What are graphs?
 
@@ -57,7 +57,7 @@ date: 2021-07-28 12:00:00
         - Cannot capture structural similarity (solved by anonymous walks - *yet to read*)
         - Cannot utilize node, link, graph features
 
-## Day 2 (27th July)
+## Day 2
 
 #### Message Passing
 - Intuition: correlations exist in networks
@@ -109,7 +109,7 @@ date: 2021-07-28 12:00:00
             - Training over every neural network, not just one
             - K layer net for K neighborhood steps
 
-## Day 3 (28th July)
+## Day 3
 
 #### Graph Neural Networks
 - Deep Learning for Graphs    
@@ -122,7 +122,7 @@ date: 2021-07-28 12:00:00
 - GNNs = WL algorithm (for discrete node features)
     - Active area of research - upgrade GNNs to be provably stronger
 
-## Day 4 (29th July)
+<!-- ## Day 4
 
 #### DEMO-Net
 - Current GNNs pitfalls identified
@@ -149,7 +149,7 @@ date: 2021-07-28 12:00:00
             - Purpose: Since the no. of nodes is a lot, we hash it and hence, same nodes get the same representations down the line?
             - Discrete vs continuous
         - Analogy to WL algorithm
-    - Node $$ \checkmark $$ vs Graph $$ \chi $$
+    - Node $$ \checkmark $$ vs Graph $$ \chi $$ -->
 
 #### Tensorflow
 - Placeholders, Sessions
