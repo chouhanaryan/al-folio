@@ -2,7 +2,7 @@
 layout: post
 title: Graph Neural Networks
 date: 2021-07-28 12:00:00
-description: Tracking my progress towards learning about GNNs for my research internship at IIT Patna
+# description: Tracking my progress towards learning about GNNs for my research internship at IIT Patna
 ---
 ##### Video lectures - [YouTube playlist: CS224W](https://www.youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn)
 ##### Textbook - [Graph Representation Learning - William L. Hamilton](https://www.cs.mcgill.ca/~wlh/grl_book/)
